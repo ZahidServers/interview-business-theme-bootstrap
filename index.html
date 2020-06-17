@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TheBrand - Homepage</title>
+ 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+		var position = $(window).scrollTop(1310);
+		var postionsecond = $(window).scrollTop(2020);
+		$(document).ready(function() {
+			$(window).scroll(function(){
+				if(scroll > position) {
+					
+						var counters = $(".count");
+						var countersQuantity = counters.length;
+						var counter = [];
+						for (i = 0; i < countersQuantity; i++) {
+							counter[i] = parseInt(counters[i].innerHTML);
+						}
+						var count = function(start, value, id) {
+							var localStart = start;
+							setInterval(function() {
+		    					if (localStart < value) {
+		    						localStart++;
+		    						counters[id].innerHTML = localStart+"+";
+		    					}
+							}, 40);
+		  				}
+		  				for (j = 0; j < countersQuantity; j++) {
+		    				count(0, counter[j], j);
+		  				}
+		  			
+		 		}
+		 	});
+		});
+	</script>
+	<style type="text/css">
+		.navcolor{
+			background-color: #7f53ac;
+			background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+			color:white;
+		}
+		.nav-link{
+			color:white !important;
+		}
+		#banner{
+			background-color: #7f53ac;
+			background-image: linear-gradient(265deg, #7f53ac 0%, #647dee 74%);
+			padding-top: 5%;
+			color: white;
+		}
+		.promo-title{
+			font-size: 40px;
+			font-weight: 600;
+			margin-top: 70px;
+		}
+		#services
+		{
+			padding:80px 0;
+		}
+		.service-img{
+			height: 117px;
+		}
+		#services h4
+		{
+			padding-top: 5px;
+			padding-bottom: 2px;
+			margin-top: 25px;
+		}
+		.btn-primary{
+			box-shadow: none;
+			padding: 8px 25px;
+			border:none;
+			border-radius: 20px;
+			background-color: #7f53ac;
+			background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+		}
+		.btn-primary:hover{
+			background-image: linear-gradient(165deg, #7f53ac 0%, #647dee 74%);
+		}
+		.btn-outline-info:hover{
+			background-color: #7f53ac;
+			background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+		}
+		.btn-outline-info{
+			border: 1px solid #7f53ac;
+			border-color: #647dee;
+		}
+		.counttray {
+			width: 60px;
+			height: 60px;
+			background-color: #7f53ac;
+			background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+			border-radius: 50%;
+			border: 1px solid #7f53ac;
+			border-color: #647dee;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			font-family: verdana;
+			float: left;
+			margin: 30px;
+			text-shadow: 1px 1px black;
+			box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
+		}
+		.card-img-top{
+			height: 260px;
+		}
+		.award-list{
+			color:#7f53ac;
+			font-weight: bold;
+			font-size:  20px;
+			list-style-type: none;
+		}
+		.award-list li{
+			text-decoration: none;
+			padding: 2px;
+		}
+		.award-list li .li-img{
+			height: 117px;
+			width: 120px;
+			padding: 2px;
+		}
+		#social-media{
+			background-color: #f8f9fa;
+			padding: 100px 0;
+		}
+		#social-media p{
+			font-weight: 600;
+			font-size: 36px;
+			margin-bottom: 30px;
+		}
+		.social-icons img{
+			transition: 0.5s;
+		}
+		.social-icons img:hover{
+			transform: translateY(-10px);
+		}
+		footer{
+			background-color: #7f53ac;
+			background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+			color:white;
+		}
+	</style>
+</head>
+<body onload="animateValue('countup1');">
+	<nav class="navbar navbar-expand-lg navbar-light navcolor sticky-top">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+	    <a class="navbar-brand" style="color:white;" href="#">TheBrand</a>
+	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About Us</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Services
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <a class="dropdown-item" href="#">Web/Graphic Designing</a>
+	          <a class="dropdown-item" href="#">Mobile App Development</a>
+	          <a class="dropdown-item" href="#">Ecommerce Development</a>
+	          <a class="dropdown-item" href="#">Digital Marketing</a>
+	        </div>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Products
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <a class="dropdown-item" href="#">Cyber School Manager</a>
+	          <a class="dropdown-item" href="#">Cyber Club Manager</a>
+	          <a class="dropdown-item" href="#">Smart Board</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Portfolio</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Career</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Gallery</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Blog</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Contact</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button id="#searchbtn" class="btn btn-outline-info btn-rounded waves-effect my-2 my-sm-0" style="color:white;" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+	    </form>
+	  </div>
+	</nav>
+	<section id="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p class="promo-title">The Best Web & App Developers in World</p>
+					<p>We provide Web Designing Web Development and Graphics Designing Solutions</p>
+				</div>
+				<div class="col-md-6 text-center">
+					<img src="flasked.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+		<img src="wave.png" class="bottom-img" style="width:100%;height: 190px;">
+	</section>
+	<section id="services">
+		<div class="container">
+			<h1 class="text-center">Our Services</h1>
+			<hr style="background-color: #7f53ac;width: 240px;height: 5px;background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);"><br>
+			<div class="row text-center">
+				<div class="col-md-3">
+					<img src="web_app_development.png" class="service-img">
+					<h4>Web App Development</h4>
+					<p>We Develop Web Applications For Your Business. We have 6 years of Experience in Developing Web Applications.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="mobile_app_development.png" class="service-img">
+					<h4>Mobile App Development</h4>
+					<p>We Develop Mobile Applications For Your Business. We have 4 years of Experience in Developing Mobile Applications.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="product_design.png" class="service-img">
+					<h4>Product Design</h4>
+					<p>We help you to Design Your Product For Your Business.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="software_development_consulting.png" class="service-img">
+					<h4>Software Development Consulting</h4>
+					<p>We help you design your softwares for Desktop and mac. We help you with the Database and testing.</p>
+				</div>
+			</div>
+			<br>
+			<center><button class="btn btn-primary">Learn More About Services</button></center>
+			<br>
+			<hr>
+		</div>
+	</section>
+	<section id="our-clients">
+		<div class="container">
+			<h1 class="text-center">Our Clients</h1>
+			<hr style="background-color: #7f53ac;width: 220px;height: 5px;background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);"><br>
+			<div class="row">
+				<div class="col-md-7">
+					<!--Carousel Wrapper-->
+					<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+					  <!--Indicators-->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+					  </ol>
+					  <!--/.Indicators-->
+					  <!--Slides-->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="carousel-item active">
+					      <div class="view">
+					        <img class="d-block w-100" style="height: 280px" src="coursel1.jpg" alt="First slide">
+					        <div class="mask rgba-black-light"></div>
+					      </div>
+					      <div class="carousel-caption">
+					        <h3 class="h3-responsive" style="text-shadow: 3px 3px 3px black;"><i>"Amazing Service and quality software."</i><b>Fox CEO Suzanne Scott</b></h3>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <!--Mask color-->
+					      <div class="view">
+					        <img class="d-block w-100" style="height: 280px" src="coursel2.jpg"
+					          alt="Second slide">
+					        <div class="mask rgba-black-strong"></div>
+					      </div>
+					      <div class="carousel-caption">
+					        <h3 class="h3-responsive" style="text-shadow: 3px 3px 3px black;"><i>"Efficient Clean and faster Applications."</i><b>Toshiba CEO Nobuaki Kurumatani</b></h3>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <!--Mask color-->
+					      <div class="view">
+					        <img class="d-block w-100" style="height: 280px" src="coursel3.jpg"
+					          alt="Third slide">
+					        <div class="mask rgba-black-slight"></div>
+					      </div>
+					      <div class="carousel-caption">
+					        <h3 class="h3-responsive" style="text-shadow: 3px 3px 3px black;"><i>"Eye Engaging Designs."</i><b>The Independent CEO Zach Leonard</b></h3>					      </div>
+					    </div>
+					  </div>
+					  <!--/.Slides-->
+					  <!--Controls-->
+					  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					  <!--/.Controls-->
+					</div>
+					<!--/.Carousel Wrapper-->
+				</div>
+				<div class="col-md-5">
+					<h3 >Trusted By <b class="count">250+</b> reveloutionary businesses.</h3>
+					<div class="row text-center">
+						<div class="col-md-4">
+							<f class="counttray count">680+</f><br><b style="color: #7f53ac;">Projects</b>
+						</div>
+						<div class="col-md-4">
+							<f class="counttray count">190+</f><br><b style="color: #7f53ac;">Awards</b>
+						</div>
+						<div class="col-md-4">
+							<f class="counttray count">250+</f><br><b style="color: #7f53ac;">Clients</b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<center><button class="btn btn-primary">Know More About Our Clients</button></center>
+			<hr>
+			<br>
+		</div>
+	</section>
+	<section id="our-work">
+		<div class="container">
+			<h1 class="text-center">Our Work</h1>
+			<hr style="background-color: #7f53ac;width: 210px;height: 5px;background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);"><br>
+			<div class="card-deck">
+				<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="work1.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Moneyfarm</h5>
+				    <p class="card-text">Aleading UK digital wealth management application.</p>
+				    <a href="#" class="btn btn-primary">Check it out</a>
+				  </div>
+				</div>
+				<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="work2.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">SportsHi</h5>
+				    <p class="card-text">Social network mobile Application built with React Native.</p>
+				    <a href="#" class="btn btn-primary">Check it Out</a>
+				  </div>
+				</div>
+			</div>
+			<br>
+			<div class="card-deck">
+				<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="work3.png" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">BrandSync</h5>
+				    <p class="card-text">A B2B Cloud based product information management platform</p>
+				    <a href="#" class="btn btn-primary">Check it Out</a>
+				  </div>
+				</div>
+				<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="work4.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">SendinBlue</h5>
+				    <p class="card-text">A powerful relationship marketing platform</p>
+				    <a href="#" class="btn btn-primary">Check it Out</a>
+				  </div>
+				</div>
+			</div>
+			<br>
+			<center><button class="btn btn-primary">See More of Our Work</button></center>
+			<hr>
+			<br>
+		</div>
+	</section>
+	<section id="acheivements">
+		<div class="container">
+			<h1 class="text-center">Our Achievements</h1>
+			<hr style="background-color: #7f53ac;width: 350px;height: 5px;background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);"><br>
+			<div class="row">
+				<div class="col-md-6">
+					<ul class="award-list">
+						<li><img class="li-img" src="acheive1.png">Top Software Developer in the USA</li>
+						<li><img class="li-img" src="acheive2.png">Top Web Developers in Poland</li>
+						<li><img class="li-img" src="acheive3.png">5 Best Design Recognition</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<img src="sf.jpg" class="img-fluid">
+				</div>
+			</div>
+			<br>
+			<center><button class="btn btn-primary">Want To Know More Click Here</button></center>
+			<hr>
+			<br>
+		</div>
+	</section>
+	<section id="social-media">
+		<div class="container text-center">
+			<p>Find Us on Social Media</p>
+			<div class="social-icons">
+				<a href="#"><img src="fb.png"></a>
+				<a href="#"><img src="whatsapp.png"></a>
+				<a href="#"><img src="youtube.png"></a>
+				<a href="#"><img src="twitter.png"></a>
+				<a href="#"><img src="g+.png"></a>
+				<a href="#"><img src="linkden.png"></a>
+				<a href="#"><img src="pinintrest.png"></a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<img src="waverev.png" class="footer-img" style="width:100%;height: 190px;">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1><a class="navbar-brand" style="color:white;" href="#">TheBrand</a></h1>
+					<p>You Have Ideas. We have Software Expertise<br>Togather we can create revolutionary businesses.<br>We help you to make your presence online and implement your ideas into reality.</p>
+					<p>&copy; Mohammed Zahid Wadiwale<br>This Template is created by Mohammed Zahid Wadiwale</p>
+				</div>
+				<div class="col-md-4">
+					<br>
+					<p><b>Contact Us</b></p>
+					<p><i class="fa fa-map-marker" aria-hidden="true"></i> Address: Mazgoan Mumbai<br>
+					<i class="fa fa-phone" aria-hidden="true"></i> Phoneno: <a style="color:white;" href="tel:9769849164">9769849164</a><br>
+					<i class="fa fa-envelope" aria-hidden="true"></i> Email ID: <a style="color:white;" href="mailto:zahid.wadiwale1234@gmail.com">zahid.wadiwale1234@gmail.com</a></p>
+					<p>
+						<b>Send Us Your Inquiry</b>
+						<form class="form-inline my-2 my-lg-0">
+					      <input class="form-control mr-sm-2" type="email" placeholder="Your Email ID" aria-label="Email"><br>
+					      <textarea class="form-control mr-sm-2" style="width: 200px;" placeholder="Your Inquiry" aria-label="Inquiry"></textarea><br><br>
+					      <br><button id="#searchbtn" class="btn btn-outline-info btn-rounded waves-effect my-2 my-sm-0" style="color:white;width: 200px;" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send Us Your Enquiry</button>
+					    </form>
+					</p>
+
+				</div>
+				<div class="col-md-4">
+					<br>
+					<h4>Our Motto</h4>
+					<h5>Delivering beyond expectation<br>Taking your business to the next level</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
